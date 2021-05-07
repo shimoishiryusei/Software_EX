@@ -1,10 +1,10 @@
 # Fdb version 3
-["dvipdf"] 1619569353 "out/software.dvi" "out/software.pdf" "out/software" 1619569355
-  "out/software.dvi" 1619569353 136288 d40a9eb5e4e381c2a913e98e87254d50 "latex"
+["dvipdf"] 1620353935 "out/software.dvi" "out/software.pdf" "out/software" 1620353937
+  "out/software.dvi" 1620353935 141856 1fc4c7b47b1f4236729fb0cb92b21af8 "latex"
   (generated)
   "out/software.pdf"
-["latex"] 1619569349 "/Users/shimoishi/GoogleDrive/schools/4/Experiment/TeX/software.tex" "out/software.dvi" "software" 1619569355
-  "/Users/shimoishi/GoogleDrive/schools/4/Experiment/TeX/software.tex" 1619569344 8509 6c54fd37b84b284a51bb7199cd3aaec8 ""
+["latex"] 1620353932 "/Users/shimoishi/GoogleDrive/schools/4/Experiment/TeX/software.tex" "out/software.dvi" "software" 1620353937
+  "/Users/shimoishi/GoogleDrive/schools/4/Experiment/TeX/software.tex" 1620353931 10296 322433ed1b7beb0d5a241708c9547adb ""
   "/usr/local/texlive/2020/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2020/texmf-dist/fonts/tfm/jknappen/ec/tcrm0800.tfm" 1136768653 1536 05df9db6aeccc4eea94fec15c9024f79 ""
   "/usr/local/texlive/2020/texmf-dist/fonts/tfm/jknappen/ec/tcrm1000.tfm" 1136768653 1536 e07581a4bb3136ece9eeb4c3ffab8233 ""
@@ -146,12 +146,13 @@
   "Python/task2.py" 1619499235 365 68789f187b8f92ee1b753f3735a2362f ""
   "Python/task3.py" 1618900317 292 9afa5adf9fe47bb649775fe41892feb5 ""
   "Python/task4.py" 1618933227 843 0a48c57f57c11f096c08a817b583eab0 ""
-  "out/software.aux" 1619569353 5696 9f63187868e4c4a08384ed9fef52c734 "latex"
-  "out/software.out" 1619569353 821 16646749a06a20046d79b0da5cf1df65 "latex"
+  "out/software.aux" 1620353935 5609 2d1af052bfb4bf49ccfc37a77d697d31 "latex"
+  "out/software.out" 1620353935 672 89e71dd74b6d83a425833003704756e7 "latex"
   "plistings.sty" 1585043208 12306 206228c3a0b473bd4a0a72179299b42a ""
-  "software.tex" 1619569344 8509 6c54fd37b84b284a51bb7199cd3aaec8 ""
+  "software.tex" 1620353931 10296 322433ed1b7beb0d5a241708c9547adb ""
+  "test.py" 1620027952 242 242b5d0291e70912a7fca6bdb477502c ""
   (generated)
-  "out/software.aux"
   "out/software.dvi"
-  "out/software.log"
   "out/software.out"
+  "out/software.log"
+  "out/software.aux"

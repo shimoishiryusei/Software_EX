@@ -77,6 +77,19 @@
 \section{目的}
 本実験は，Script言語であるPythonの基礎を身につけることを目的とする．まず，ファイルの入出力を習得し，今後の研究，実験で活用できるようにする．
 
+\section{Pythonとは}
+Python\cite{python}とは分散オレペーティングシステム「Amoeba」のシステム管理を行うためにGuido van Rosseum氏が開発したプログラミング言語である．
+インタプリタ型言語であり，読みやすく，エラーの修正がしやすいため，初心者でも扱いやすい言語である．
+Pythonが活用されている例を以下に示す．
+\begin{itemize}
+  \item データの収集，処理，分析
+  \item クローリング，スクレイピング
+  \item 機械学習，ディープラーニング
+  \item ゲーム，スマホアプリの開発
+  \item Webアプリケーション開発
+\end{itemize}
+
+
 \section{実験環境}
 実験環境を以下の表\ref{em}に示す．
 \begin{table}[H]
@@ -198,13 +211,16 @@
   \end{figure}
 
 \section{考察}
-\subsection{演習課題1}
-  
+  今回の実験の課題4にて，読み込むファイルと書き出すファイルを対応付けてfor文で繰り返すプログラムを作成した．このとき使用したzip関数について考察を行う．\cite{zip}\\
+  まず，2つの配列を対応付けてfor文を作る際に考えられるアルゴリズムを以下に示す．
+  \lstinputlisting{test.py}
+  zip関数を利用することにより，複数のリストを同時に所得し処理を行うことができるようになるため，他のアルゴリズムよりもシンプルに書くことができた．
+  zip関数で注意しなければ注意しなければならない点は，取得した2つ以上のリストで要素数が異なるときは，要素数の少ないほうに合わせて処理されることである．
 
-\subsection{演習課題2}
-  
-
-\subsection{演習課題3}
+  \begin{thebibliography}{1}
+    \bibitem{zip} Python "標準ライブラリ" (最終閲覧日 2021年5月7日)\\ \url{https://docs.python.org/ja/3/library/functions.html}\\
+    \bibitem{python} @IT "Pythonってどんな言語なの？" (最終閲覧日 2021年5月7日)\\ \url{https://www.atmarkit.co.jp/ait/articles/1904/02/news024.html}\\
+  \end{thebibliography}
 
 
 
