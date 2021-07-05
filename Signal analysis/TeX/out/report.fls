@@ -1,10 +1,10 @@
-PWD /Volumes/GoogleDrive/My Drive/schools/4/Experiment/Signal analysis/TeX
+PWD /Volumes/GoogleDrive/マイドライブ/schools/4/Experiment/Signal analysis/TeX
 INPUT /usr/local/texlive/2021/texmf.cnf
 INPUT /usr/local/texlive/2021/texmf-dist/web2c/texmf.cnf
 INPUT /usr/local/texlive/2021/texmf.cnf
 INPUT /usr/local/texlive/2021/texmf-dist/web2c/texmf.cnf
 INPUT /usr/local/texlive/2021/texmf-var/web2c/eptex/platex.fmt
-INPUT /Volumes/GoogleDrive/My Drive/schools/4/Experiment/Signal analysis/TeX/report.tex
+INPUT /Volumes/GoogleDrive/�ޥ��ɥ饤��/schools/4/Experiment/Signal analysis/TeX/report.tex
 OUTPUT out/report.log
 INPUT /usr/local/texlive/2021/texmf-dist/tex/platex/jsclasses/jsarticle.cls
 INPUT /usr/local/texlive/2021/texmf-dist/tex/platex/jsclasses/jsarticle.cls
@@ -886,9 +886,17 @@ INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/ptex-fonts/jis/jisg.tfm
 INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/public/cm/cmss12.tfm
 INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/ptex-fonts/standard/tmin10.tfm
 INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/ptex-fonts/standard/tmin10.tfm
+OUTPUT out/report.dvi
+INPUT ./picture/tanjun3.png
+INPUT ./picture/tanjun3.png
+INPUT picture/tanjun3.png
+INPUT extractbb -B cropbox -O picture/tanjun3.png
+INPUT ./picture/tanjun5.png
+INPUT ./picture/tanjun5.png
+INPUT picture/tanjun5.png
+INPUT extractbb -B cropbox -O picture/tanjun5.png
 INPUT ./Sci_data/kadai4.sce
 INPUT Sci_data/kadai4.sce
-OUTPUT out/report.dvi
 INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/ptex-fonts/standard/tgoth10.tfm
 INPUT Sci_data/kadai4.sce
 INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/ptex-fonts/standard/tgoth10.tfm
@@ -943,6 +951,38 @@ INPUT ./picture/kadai14.png
 INPUT ./picture/kadai14.png
 INPUT picture/kadai14.png
 INPUT extractbb -B cropbox -O picture/kadai14.png
+INPUT ./Sci_data/kenkyu.sce
+INPUT Sci_data/kenkyu.sce
+INPUT Sci_data/kenkyu.sce
+INPUT ./Sci_data/kenkyu2.sce
+INPUT Sci_data/kenkyu2.sce
+INPUT Sci_data/kenkyu2.sce
+INPUT ./picture/noiz.png
+INPUT ./picture/noiz.png
+INPUT picture/noiz.png
+INPUT extractbb -B cropbox -O picture/noiz.png
+INPUT ./picture/kenkyu1.png
+INPUT ./picture/kenkyu1.png
+INPUT picture/kenkyu1.png
+INPUT extractbb -B cropbox -O picture/kenkyu1.png
+INPUT ./picture/kenkyu2.png
+INPUT ./picture/kenkyu2.png
+INPUT picture/kenkyu2.png
+INPUT extractbb -B cropbox -O picture/kenkyu2.png
+INPUT ./Sci_data/ex_kadai.sce
+INPUT Sci_data/ex_kadai.sce
+INPUT Sci_data/ex_kadai.sce
+INPUT ./picture/ex_kadai1.png
+INPUT ./picture/ex_kadai1.png
+INPUT picture/ex_kadai1.png
+INPUT extractbb -B cropbox -O picture/ex_kadai1.png
+INPUT ./Sci_data/ex_kadai2.sce
+INPUT Sci_data/ex_kadai2.sce
+INPUT Sci_data/ex_kadai2.sce
+INPUT ./picture/ex_kadai2.png
+INPUT ./picture/ex_kadai2.png
+INPUT picture/ex_kadai2.png
+INPUT extractbb -B cropbox -O picture/ex_kadai2.png
 INPUT out/report.aux
 INPUT out/report.out
 INPUT out/report.out

@@ -1,13 +1,18 @@
-n = 1 : 100;
-Fs = 8000;
-t = 0 : 1/Fs : 1-1/Fs;
-y_nz = grand(1, length(t), 'nor', 0, 1); //ノイズの作成
+[y, fs, bits] = wavread('voice1.wav'); //voice1.wavを読み込む
+y1 = y(8 * fs + (0 : 50000)); //開始から8秒後の50000点を取り出す
+Y1 = fft(y1);   //フーリエ変換
+Y1 = Y1(1 : length(y1)/ 2+1); //フーリエ変換結果の後ろ半分を破棄
+f = linspace(0, fs/2, length(Y1));  //周波数軸を作成
+scf(0);
+subplot(2,1,1);
+xlabel('t');
+ylabel('y');
+plot(y1); 
 
-s = sin(2 * %pi * 440 * t);
-y_sn = 0.8 * s + 0.1 * y_nz; //ノイズが混じったsin波形の作成
-
-//plot(y_sn)
-
-DS(t) = 0.25(y_sn(t-1/Fs) + y_sn(t) + y_sn(t+1/Fs));
-
-plot(DS(t))
+subplot(2,1,2);
+xlabel('f');
+ylabel('Y');
+plot(f, abs(Y1));   //フーリエ変換結果を図示
+//wavwrite(y, 44100, 16, 'test7.wav');
+sound(y1, 44100); //音を出す
+xs2png(0, 'ex_kadai1.png');

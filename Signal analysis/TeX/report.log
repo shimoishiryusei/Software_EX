@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.141592653-p3.9.0-210218-2.6 (utf8.euc) (TeX Live 2021) (preloaded format=platex 2021.5.18)  26 MAY 2021 21:00
+This is e-pTeX, Version 3.141592653-p3.9.0-210218-2.6 (utf8.euc) (TeX Live 2021) (preloaded format=platex 2021.5.18)  28 MAY 2021 03:03
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -519,37 +519,37 @@ Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 \Gm@layoutvoffset=\dimen272
 \Gm@dimlist=\toks33
 )
-Package hyperref Info: Option `setpagesize' set `false' on input line 67.
-Package hyperref Info: Option `bookmarksnumbered' set `true' on input line 67.
-Package hyperref Info: Option `bookmarksopen' set `true' on input line 67.
-Package hyperref Info: Option `colorlinks' set `true' on input line 67.
+Package hyperref Info: Option `setpagesize' set `false' on input line 66.
+Package hyperref Info: Option `bookmarksnumbered' set `true' on input line 66.
+Package hyperref Info: Option `bookmarksopen' set `true' on input line 66.
+Package hyperref Info: Option `colorlinks' set `true' on input line 66.
 
 (./report.aux)
 \openout1 = `report.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 69.
-LaTeX Font Info:    ... okay on input line 69.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 69.
-LaTeX Font Info:    ... okay on input line 69.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 69.
-LaTeX Font Info:    ... okay on input line 69.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 69.
-LaTeX Font Info:    ... okay on input line 69.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 69.
-LaTeX Font Info:    ... okay on input line 69.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 69.
-LaTeX Font Info:    ... okay on input line 69.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 69.
-LaTeX Font Info:    ... okay on input line 69.
-LaTeX Font Info:    Checking defaults for JY1/mc/m/n on input line 69.
-LaTeX Font Info:    ... okay on input line 69.
-LaTeX Font Info:    Checking defaults for JT1/mc/m/n on input line 69.
-LaTeX Font Info:    ... okay on input line 69.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 69.
-LaTeX Font Info:    ... okay on input line 69.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 69.
-LaTeX Font Info:    ... okay on input line 69.
-Package hyperref Info: Link coloring ON on input line 69.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 68.
+LaTeX Font Info:    ... okay on input line 68.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 68.
+LaTeX Font Info:    ... okay on input line 68.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 68.
+LaTeX Font Info:    ... okay on input line 68.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 68.
+LaTeX Font Info:    ... okay on input line 68.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 68.
+LaTeX Font Info:    ... okay on input line 68.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 68.
+LaTeX Font Info:    ... okay on input line 68.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 68.
+LaTeX Font Info:    ... okay on input line 68.
+LaTeX Font Info:    Checking defaults for JY1/mc/m/n on input line 68.
+LaTeX Font Info:    ... okay on input line 68.
+LaTeX Font Info:    Checking defaults for JT1/mc/m/n on input line 68.
+LaTeX Font Info:    ... okay on input line 68.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 68.
+LaTeX Font Info:    ... okay on input line 68.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 68.
+LaTeX Font Info:    ... okay on input line 68.
+Package hyperref Info: Link coloring ON on input line 68.
 
 (/usr/local/texlive/2021/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
@@ -563,16 +563,12 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count317
 )
-LaTeX Info: Redefining \ref on input line 69.
-LaTeX Info: Redefining \pageref on input line 69.
-LaTeX Info: Redefining \nameref on input line 69.
+LaTeX Info: Redefining \ref on input line 68.
+LaTeX Info: Redefining \pageref on input line 68.
+LaTeX Info: Redefining \nameref on input line 68.
  (./report.out) (./report.out)
 \@outlinefile=\write4
 \openout4 = `report.out'.
-
-
-
-Package hyperref Warning: Rerun to get /PageLabels entry.
 
 \c@lstlisting=\count318
 Package caption Info: Begin \AtBeginDocument code.
@@ -621,79 +617,135 @@ Dictionary: translator-basic-dictionary, Language: English
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
-(Font)              scaled to size 6.72699pt on input line 69.
+(Font)              scaled to size 6.72699pt on input line 68.
 LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
-(Font)              scaled to size 4.805pt on input line 69.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 69.
+(Font)              scaled to size 4.805pt on input line 68.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 68.
 
 (/usr/local/texlive/2021/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 69.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 68.
 
 
 (/usr/local/texlive/2021/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 9.60999pt on input line 69.
+(Font)              scaled to size 9.60999pt on input line 68.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 6.72699pt on input line 69.
+(Font)              scaled to size 6.72699pt on input line 68.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 4.805pt on input line 69.
+(Font)              scaled to size 4.805pt on input line 68.
 LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
-(Font)              scaled to size 13.83836pt on input line 71.
+(Font)              scaled to size 13.83836pt on input line 70.
 LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
-(Font)              scaled to size 13.83836pt on input line 71.
+(Font)              scaled to size 13.83836pt on input line 70.
 LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
-(Font)              scaled to size 13.83836pt on input line 71.
+(Font)              scaled to size 13.83836pt on input line 70.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 13.83836pt on input line 71.
+(Font)              scaled to size 13.83836pt on input line 70.
 LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <10> not available
-(Font)              Font shape `JT1/gt/m/n' tried instead on input line 79.
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 91.
 LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
-(Font)              scaled to size 9.60999pt on input line 79.
+(Font)              scaled to size 9.60999pt on input line 91.
 LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <10> not available
-(Font)              Font shape `JY1/gt/m/n' tried instead on input line 79.
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 91.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 9.60999pt on input line 79.
+(Font)              scaled to size 9.60999pt on input line 91.
 
 
-LaTeX Warning: Reference `T:emviroment' on page 1 undefined on input line 79.
-
-
-LaTeX Warning: Citation `text' on page 1 undefined on input line 92.
+LaTeX Warning: Citation `text' on page 1 undefined on input line 91.
 
 LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
-(Font)              scaled to size 11.53198pt on input line 95.
+(Font)              scaled to size 11.53198pt on input line 94.
 LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
-(Font)              scaled to size 11.53198pt on input line 95.
+(Font)              scaled to size 11.53198pt on input line 94.
 LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
-(Font)              scaled to size 11.53198pt on input line 95.
+(Font)              scaled to size 11.53198pt on input line 94.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 11.53198pt on input line 95.
+(Font)              scaled to size 11.53198pt on input line 94.
 
-LaTeX Warning: Citation `sampling' on page 1 undefined on input line 96.
+LaTeX Warning: Citation `sampling' on page 1 undefined on input line 95.
 
 LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
-(Font)              scaled to size 6.72699pt on input line 97.
+(Font)              scaled to size 6.72699pt on input line 96.
 LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
-(Font)              scaled to size 4.805pt on input line 97.
-
-LaTeX Warning: Reference `C:kadai4' on page 1 undefined on input line 114.
-
-
-LaTeX Warning: Reference `G:kadai4' on page 1 undefined on input line 115.
-
+(Font)              scaled to size 4.805pt on input line 96.
 Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
-nput line 116.
-LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
-(Font)              scaled to size 8.64899pt on input line 116.
-LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 8.64899pt on input line 116.
+nput line 120.
 [1
 
-] [2] (./report.aux)
+]
+LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
+(Font)              scaled to size 8.64899pt on input line 120.
+LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
+(Font)              scaled to size 8.64899pt on input line 120.
+File: picture/kadai4.png Graphic file (type bmp)
+<picture/kadai4.png>
+ [2]
+File: picture/reidai6.png Graphic file (type bmp)
+<picture/reidai6.png>
+ [3]
+File: picture/reidai7.png Graphic file (type bmp)
+<picture/reidai7.png>
+File: picture/reidai8.png Graphic file (type bmp)
+<picture/reidai8.png>
+ [4] [5] [6]
+File: picture/kadai9_h3.png Graphic file (type bmp)
+<picture/kadai9_h3.png>
+
+Overfull \hbox (31.6352pt too wide) in paragraph at lines 181--182
+ [][] 
+ []
+
+File: picture/kadai9_h5.png Graphic file (type bmp)
+<picture/kadai9_h5.png>
+
+Overfull \hbox (31.6352pt too wide) in paragraph at lines 187--188
+ [][] 
+ []
+
+
+Overfull \hbox (5.29254pt too wide) in paragraph at lines 178--192
+[][] 
+ []
+
+[7]
+File: picture/kadai13.png Graphic file (type bmp)
+<picture/kadai13.png>
+
+
+LaTeX Warning: Reference `G:kadai14' on page 8 undefined on input line 219.
+
+[8]
+File: picture/kadai14.png Graphic file (type bmp)
+<picture/kadai14.png>
+ [9]
+
+LaTeX Warning: Reference `G:kadai14' on page 10 undefined on input line 227.
+
+
+LaTeX Warning: Citation `record' on page 10 undefined on input line 232.
+
+
+LaTeX Warning: Reference `C:ex_kadai1' on page 10 undefined on input line 233.
+
+
+LaTeX Warning: Reference `C:ex_kadai2' on page 10 undefined on input line 233.
+
+
+LaTeX Warning: Reference `G:ex_kadai1' on page 10 undefined on input line 234.
+
+
+LaTeX Warning: Reference `G:ex_kadai2' on page 10 undefined on input line 234.
+
+File: picture/ex_kadai1.png Graphic file (type bmp)
+<picture/ex_kadai1.png>
+[10]
+File: picture/ex_kadai2.png Graphic file (type bmp)
+<picture/ex_kadai2.png>
+ [11] [12] (./report.aux)
 
 LaTeX Warning: There were undefined references.
 
@@ -706,16 +758,16 @@ Package rerunfilecheck Warning: File `report.out' has changed.
 (rerunfilecheck)                or use package `bookmark'.
 
 Package rerunfilecheck Info: Checksums for `report.out':
-(rerunfilecheck)             Before: 05B9FF7757FE6A446D8F294B02146D28;54
-(rerunfilecheck)             After:  987F230EA82CD76A6D8D11A03B2CB016;1031.
+(rerunfilecheck)             Before: 598B3EA2E9A37E2E712D0DD8111F251E;923
+(rerunfilecheck)             After:  A01A2083580EE48C53B156BC7E230026;966.
  ) 
 Here is how much of TeX's memory you used:
- 15436 strings out of 479466
- 261060 string characters out of 5870548
- 616123 words of memory out of 5000000
- 32917 multiletter control sequences out of 15000+600000
+ 15516 strings out of 479466
+ 262430 string characters out of 5870548
+ 923376 words of memory out of 5000000
+ 32982 multiletter control sequences out of 15000+600000
  417765 words of font info for 95 fonts, out of 8000000 for 9000
  934 hyphenation exceptions out of 8191
- 71i,9n,77p,751b,2376s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 71i,13n,77p,751b,2374s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on report.dvi (2 pages, 11352 bytes).
+Output written on report.dvi (12 pages, 82640 bytes).

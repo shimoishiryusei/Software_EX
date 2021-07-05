@@ -18,9 +18,8 @@
 \usepackage{siunitx}
 \usepackage{url}
 % ページの周りの余白
-\usepackage[top=10truemm,bottom=10truemm,left=25truemm,right=25truemm]{geometry}
-% ページ番号の削除
-\pagestyle{empty}
+\usepackage[top=25truemm,bottom=25truemm,left=30truemm,right=30truemm]{geometry}
+
 
 % URLの設定
 \Urlmuskip=0mu  plus 10mu
@@ -100,15 +99,44 @@
   \subsection{窓関数}
     コンピュータ内で周期性が成り立たない信号に対してFFTを行うとき，周波数の先頭から$N$個のサンプルを取ると，区間の両端の値が異なってしまう．
     このとき，フーリエ変換のグラフには本来の信号には関係のない余分なスペクトルが出力されてしまい，カクカクなグラフになる．そこで，周期性の無い信号で余分なスペクトルが出にくくなるように
-    うまく信号を切り取るのが窓関数である．窓関数の中で代表的なものは，信号を矩形波で切り取る「矩形窓」や，両端がなめらかに絞られている「ハミング窓」
+    うまく信号を切り取るのが窓関数\cite{window}である．窓関数の中で代表的なものは，信号を矩形波で切り取る「矩形窓」や，両端がなめらかに絞られている「ハミング窓」
     がある．
 
   \subsection{畳み込み}
-    畳み込み(畳み込み積分)とは，関数$f$を平行移動させながら関数$g$を重ね足し合わせる二項演算のことであり，以下の式\ref{tatamikomi}ように定義できる．
+    畳み込み(畳み込み積分)\cite{tatamikomi}とは，関数$f$を平行移動させながら関数$g$を重ね足し合わせる二項演算のことであり，以下の式\ref{tatamikomi}ように定義できる．
     \begin{equation}
       (f * g)(t) = \int{f(\tau)g(t-\tau)} \nonumber   \label{tatamikomi}
     \end{equation}
-    
+    畳み込みを用いることにより，システムの時間経過による状態の変化を導き出す事ができるようになる．
+
+  \subsection{データの円滑化}
+    入力信号の多くはきれいな波形ではなくノイズが加わっている場合が多い．このとき，ノイズなどの影響を除去の作業が必要となる．
+    ノイズを除去するために用いられる円滑化手法はいくつか存在するが，ここでは単純移動平均について述べる．
+    単純移動平均とは，系列データを，ある一定区画ごとの平均値を区間をずらしながら求める手法である．
+    式\ref{tanjun3}は3点移動平均，式\ref{tanjun5}は5点移動平均の定義式である．式中の$DS_t$は円滑化後のデータ，$t$は区画を示している．また，これらの式を
+    使って円滑化した場合の様子を図\ref{GR_tanjun3},\ref{GR_tanjun5}に示す．
+    \begin{equation}
+      DS_t = \frac{1}{4}(D_{t-1} + 2D_t + D_{t+1}) \label{tanjun3}
+    \end{equation}
+    \begin{equation}
+      DS_t = \frac{1}{16}(D_{t-2} + 4D_{t-1} + 6D_t + 4D_{t+1} + D_{t+2}) \label{tanjun5}
+    \end{equation}
+    \begin{figure}[H]
+      \begin{tabular}{cc}
+        \begin{minipage}[t]{0.48\textwidth}
+          \centering
+          \includegraphics[clip,width=6cm]{picture/tanjun3.png}
+          \caption{3点平均移動}
+          \label{GR_tanjun3}
+        \end{minipage} &
+        \begin{minipage}[t]{0.48\textwidth}
+          \centering
+          \includegraphics[clip,width=6cm]{picture/tanjun5.png}
+          \caption{5点平均移動}
+          \label{GR_tanjun5}
+        \end{minipage}
+      \end{tabular}
+    \end{figure}
 
 \section{実験結果}
   \subsection{演習4}
@@ -227,13 +255,72 @@
   図\ref{G:kadai14}からもわかるように，$\SI{450}{\hertz}$以上の周波数だけが出力されていることがわかる．よってハイパスフィルタが
   正常に動作していることがわかる．
 
+  \subsection{研究課題}
+    \begin{screen}
+      3点および5点の移動平均を行うプログラムをScilabのsce-ファイルで作成し，
+      フィルタの前後の信号を同時にプロットしてそれらの効果を確認せよ．ただし，
+      読込む信号は雑音交じりの信号$sn$とする．
+    \end{screen}
+    以下に作成したソースコードを以下のCode\ref{C:tanjun3},\ref{C:tanjun5}に示す．また，その実行結果を以下の図\ref{G:tanjun3},\ref{G:tanjun5}
+    に示す．ただし，ノイズの作成はこれまでの実験で使用したノイズを使用し，ノイズ混じりの円滑化前のグラフは図\ref{G:noiz}に示す．
+    \lstinputlisting[caption=3点平均移動のソースコード, label=C:tanjun3]{Sci_data/kenkyu.sce}
+    \lstinputlisting[caption=5点平均移動のソースコード, label=C:tanjun5]{Sci_data/kenkyu2.sce}
+    \begin{figure}[H]
+      \centering
+      \includegraphics[width=0.8\linewidth]{picture/noiz.png}
+      \caption{ノイズが加わっているsin波形}
+      \label{G:noizu}
+    \end{figure}
+    \begin{figure}[H]
+      \begin{tabular}{cc}
+        \begin{minipage}[t]{0.48\textwidth}
+          \centering
+          \includegraphics[clip,width=9cm]{picture/kenkyu1.png}
+          \caption{3点平均移動のグラフ}
+          \label{G:tanjun3}
+        \end{minipage} &
+        \begin{minipage}[t]{0.48\textwidth}
+          \centering
+          \includegraphics[clip,width=9cm]{picture/kenkyu2.png}
+          \caption{5点平均移動のグラフ}
+          \label{G:tanjun5}
+        \end{minipage}
+      \end{tabular}
+    \end{figure}
+
+
+
 \section{考察}
+  今回の実験で音の大きさ(振幅)や音の高さ(周波数)をグラフ化することができるようになった．そのことを応用し，自分の声を録音し，それをグラフ化
+  することを本実験の考察とする．音声はブラウザ上でwav形式の録音が可能な「音声録音くん」\cite{record}を使用して，「あーーー」という声を
+  高い声，低い声それぞれ録音した．以下のCode\ref{C:ex_kadai1}に低い声の場合のソースコード，Code\ref{C:ex_kadai2}に高い声の場合のソースコード，
+  図\ref{G:ex_kadai1},\ref{G:ex_kadai2}にそれぞれ低い声と高い声の場合のグラフを示す．
+  \lstinputlisting[caption=低い声の場合のソースコード, label=C:ex_kadai1]{Sci_data/ex_kadai.sce}
+  \begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\linewidth]{picture/ex_kadai1.png}
+    \caption{低い声場合のグラフ}
+    \label{G:ex_kadai1}
+  \end{figure}
+  \lstinputlisting[caption=高い声の場合のソースコード, label=C:ex_kadai2]{Sci_data/ex_kadai2.sce}
+  \begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\linewidth]{picture/ex_kadai2.png}
+    \caption{高い声場合のグラフ}
+    \label{G:ex_kadai2}
+  \end{figure}
+  図\ref{G:ex_kadai1},\ref{G:ex_kadai2}からわかるように，声の高さが変わることによって時間軸上では波の密度が変化し，周波数軸では
+  スペクトルの位置が少し変化していることがわかる．Scilabで音声解析を行うことによって，音の情報を視覚化することができ，例え音声を聞かなくとも
+  音について理解することができる．これらの技術を用いることで，システムの中で音声を処理し，その他のところへ用いることができるようになるため，とても
+  便利であり重要な技術であることがわかった．
 
 \begin{thebibliography}{99}
   \bibitem{text} 野尻 紘聖: 信号処理, 制御情報システム工学実験2 実験指導書  (最終閲覧日 2021年5月25日)\\
   \bibitem{sampling} 嵯峨山 茂樹: 音声解析(1)サンプリングと量子化, 東京大学 工学部 計数工学科/物理工学科 (最終閲覧日 2021年5月25日)\\ 
   \url{https://ocw.u-tokyo.ac.jp/lecture_files/engin_01/2/notes/ja/B1-Sampling.pdf}
   \bibitem{window} ロジカルアーツ研究所: 窓関数を用いる理由 (最終閲覧日 2021年5月26日) \\ \url{https://www.logical-arts.jp/archives/124}
+  \bibitem{tatamikomi} 中川朋子: たたみこみ（合成積）, 東北工業大学 情報通信工学科 中川研究室 (最終閲覧日 2021年5月28日) \\ \url{https://www.ice.tohtech.ac.jp/nakagawa/laplacetrans/convolution1.htm}
+  \bibitem{record} 音声録音: 音声録音くん, NCH software (最終閲覧日 2021年5月28日) \\ \url{https://www.petitmonte.com/labo/voice-recording/}
 \end{thebibliography}
 
 
