@@ -1,10 +1,10 @@
-This is e-pTeX, Version 3.141592653-p3.9.0-210218-2.6 (utf8.euc) (TeX Live 2021) (preloaded format=platex 2021.5.18)  15 JUL 2021 10:47
+This is e-pTeX, Version 3.141592653-p3.9.0-210218-2.6 (utf8.euc) (TeX Live 2021) (preloaded format=platex 2021.5.18)  3 AUG 2021 13:51
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**"/Volumes/GoogleDrive/My Drive/schools/4/Experiment/Arduino/TeX/report.tex"
-(/Volumes/GoogleDrive/My Drive/schools/4/Experiment/Arduino/TeX/report.tex
+**/Users/shimoishi/GoogleDrive/schools/4/Experiment/Arduino/TeX/report.tex
+(/Users/shimoishi/GoogleDrive/schools/4/Experiment/Arduino/TeX/report.tex
 pLaTeX2e <2020-10-01>+2 (based on LaTeX2e <2020-10-01> patch level 4)
 L3 programming layer <2021-02-18> (/usr/local/texlive/2021/texmf-dist/tex/platex/jsclasses/jsarticle.cls
 Document Class: jsarticle 2020/10/09 jsclasses (okumura, texjporg)
@@ -588,17 +588,6 @@ LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
 (Font)              scaled to size 11.53198pt on input line 74.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
 (Font)              scaled to size 11.53198pt on input line 74.
-LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <10> not available
-(Font)              Font shape `JT1/gt/m/n' tried instead on input line 80.
-LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
-(Font)              scaled to size 9.60999pt on input line 80.
-LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <10> not available
-(Font)              Font shape `JY1/gt/m/n' tried instead on input line 80.
-LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 9.60999pt on input line 80.
-
-LaTeX Warning: Citation `interrupt2' on page 1 undefined on input line 80.
-
 File: Circuit.jpg Graphic file (type bmp)
 <Circuit.jpg>
 LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
@@ -610,23 +599,27 @@ LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
 ]
 Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on input line 99.
 LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
+(Font)              scaled to size 9.60999pt on input line 99.
+LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
 (Font)              scaled to size 8.64899pt on input line 1.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
 (Font)              scaled to size 8.64899pt on input line 1.
 [2]
+File: picture/up.png Graphic file (type bmp)
+<picture/up.png>
+LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
+(Font)              scaled to size 8.64899pt on input line 155.
+LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
+(Font)              scaled to size 8.64899pt on input line 155.
+File: picture/down.png Graphic file (type bmp)
+<picture/down.png>
+[3]
 File: picture/chata1.jpg Graphic file (type bmp)
 <picture/chata1.jpg>
-LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
-(Font)              scaled to size 8.64899pt on input line 154.
-LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
-(Font)              scaled to size 8.64899pt on input line 154.
 File: picture/chata2.png Graphic file (type bmp)
 <picture/chata2.png>
-[3] (out/report.aux)
-
-LaTeX Warning: There were undefined references.
-
+[4] [5] (out/report.aux)
 Package rerunfilecheck Info: File `report.out' has not changed.
-(rerunfilecheck)             Checksum: E904256B25A11165433E899313F26200;550.
+(rerunfilecheck)             Checksum: DCD00BED4D598BF1E7B1F57A843C0E7D;734.
  )
-Output written on out/report.dvi (3 pages, 16008 bytes).
+Output written on out/report.dvi (5 pages, 25332 bytes).

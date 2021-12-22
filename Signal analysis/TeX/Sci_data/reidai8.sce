@@ -5,17 +5,17 @@ y1 = w.*y1;     //作成したハニング窓をかける
 Y1 = fft(y1);   //フーリエ変換
 Y1 = Y1(1 : length(y1)/ 2+1);   //フーリエ変換結果の後半分を破棄
 f = linspace(0, fs/2, length(Y1));  //周波数軸を作成
-scf(0);
+
 subplot(2,1,1);
-xlabel('t');
+xlabel('t[s]');
 ylabel('y');
 plot(y1);
 
 subplot(2,1,2);
-xlabel('f');
+xlabel('f[Hz]');
 ylabel('Y');
 plot(f, abs(Y1));       //フーリエ変換結果を図示
-xs2png(0, 'reidai8.png');
+
 
 
 

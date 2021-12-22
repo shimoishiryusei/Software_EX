@@ -38,7 +38,7 @@ f_sn = linspace(0, 22050, length(Y_sn));
 f_fsn = linspace(0, 22050, length(Y_fsn)); //周波数軸の作成
 
 subplot(2,1,2);
-xlabel('f');
+xlabel('f[Hz]');
 ylabel('Y_nz,Y_sn,Y_fsn');
 plot(f_nz, abs(Y_nz),'-r'); //ノイズのフーリエ変換
 plot(f_sn, abs(Y_sn),'-g'); //ノイズ付きsin波形のフーリエ変換
@@ -78,11 +78,10 @@ f_sn = linspace(0, 22050, length(Y_sn));
 f_fsn = linspace(0, 22050, length(Y_fsn)); //周波数軸の作成
 
 subplot(2,1,2);
-xlabel('f');
+xlabel('f[Hz]');
 ylabel('Y_nz,Y_sn,Y_fsn');
 plot(f_nz, abs(Y_nz),'-r'); //ノイズのフーリエ変換
 plot(f_sn, abs(Y_sn),'-g'); //ノイズ付きsin波形のフーリエ変換
 plot(f_fsn,abs(Y_fsn),'-b'); //フィルター付きsin波形のフーリエ変換
 
-xs2png(0, 'kadai9_h3.png');
-xs2png(1, 'kadai9_h5.png');
+

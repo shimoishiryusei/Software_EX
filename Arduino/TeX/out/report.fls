@@ -1,10 +1,10 @@
-PWD /Volumes/GoogleDrive/My Drive/schools/4/Experiment/Arduino/TeX
+PWD /Users/shimoishi/GoogleDrive/schools/4/Experiment/Arduino/TeX
 INPUT /usr/local/texlive/2021/texmf.cnf
 INPUT /usr/local/texlive/2021/texmf-dist/web2c/texmf.cnf
 INPUT /usr/local/texlive/2021/texmf.cnf
 INPUT /usr/local/texlive/2021/texmf-dist/web2c/texmf.cnf
 INPUT /usr/local/texlive/2021/texmf-var/web2c/eptex/platex.fmt
-INPUT /Volumes/GoogleDrive/My Drive/schools/4/Experiment/Arduino/TeX/report.tex
+INPUT /Users/shimoishi/GoogleDrive/schools/4/Experiment/Arduino/TeX/report.tex
 OUTPUT out/report.log
 INPUT /usr/local/texlive/2021/texmf-dist/tex/platex/jsclasses/jsarticle.cls
 INPUT /usr/local/texlive/2021/texmf-dist/tex/platex/jsclasses/jsarticle.cls
@@ -907,7 +907,6 @@ INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/public/cm/cmr12.tfm
 INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/ptex-fonts/standard/tgoth10.tfm
 INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/ptex-fonts/jis/jisg.tfm
 INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/public/cm/cmss12.tfm
-INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/ptex-fonts/standard/tgoth10.tfm
 INPUT ./Circuit.jpg
 INPUT ./Circuit.jpg
 INPUT Circuit.jpg
@@ -916,14 +915,23 @@ INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/ptex-fonts/standard/tmin10.tf
 INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/ptex-fonts/standard/tmin10.tfm
 OUTPUT out/report.dvi
 INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/ptex-fonts/standard/tgoth10.tfm
+INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/ptex-fonts/standard/tgoth10.tfm
 INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/ptex-fonts/jis/jisg.tfm
+INPUT ./picture/up.png
+INPUT ./picture/up.png
+INPUT picture/up.png
+INPUT extractbb -B cropbox -O picture/up.png
+INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/ptex-fonts/standard/tmin10.tfm
+INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/ptex-fonts/jis/jis.tfm
+INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/public/cm/cmr9.tfm
+INPUT ./picture/down.png
+INPUT ./picture/down.png
+INPUT picture/down.png
+INPUT extractbb -B cropbox -O picture/down.png
 INPUT ./picture/chata1.jpg
 INPUT ./picture/chata1.jpg
 INPUT picture/chata1.jpg
 INPUT extractbb -B cropbox -O picture/chata1.jpg
-INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/ptex-fonts/standard/tmin10.tfm
-INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/ptex-fonts/jis/jis.tfm
-INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/public/cm/cmr9.tfm
 INPUT ./picture/chata2.png
 INPUT ./picture/chata2.png
 INPUT picture/chata2.png

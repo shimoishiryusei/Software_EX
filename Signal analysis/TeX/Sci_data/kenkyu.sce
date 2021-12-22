@@ -13,6 +13,8 @@ f = linspace(0, 4000, length(Y_sn));
 scf(0);
 
 plot2d(n, y_sn(n));
+xlabel("t[s]");
+ylabel("y");
 
 for i = 2 : 1: 100
    DS(i) = 0.25 * (y_sn(i-1) + 2*y_sn(i) + y_sn(i+1));
@@ -20,6 +22,8 @@ end
 
 scf(1);
 plot2d(n,DS);
+xlabel("t[s]");
+ylabel("y");
 
-xs2png(1, 'kenkyu1.png')
+
 

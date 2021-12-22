@@ -1,10 +1,10 @@
-PWD /Volumes/GoogleDrive/マイドライブ/schools/4/Experiment/Signal analysis/TeX
+PWD /Volumes/GoogleDrive/My Drive/schools/4/Experiment/Signal analysis/TeX
 INPUT /usr/local/texlive/2021/texmf.cnf
 INPUT /usr/local/texlive/2021/texmf-dist/web2c/texmf.cnf
 INPUT /usr/local/texlive/2021/texmf.cnf
 INPUT /usr/local/texlive/2021/texmf-dist/web2c/texmf.cnf
 INPUT /usr/local/texlive/2021/texmf-var/web2c/eptex/platex.fmt
-INPUT /Volumes/GoogleDrive/�ޥ��ɥ饤��/schools/4/Experiment/Signal analysis/TeX/report.tex
+INPUT /Volumes/GoogleDrive/My Drive/schools/4/Experiment/Signal analysis/TeX/report.tex
 OUTPUT out/report.log
 INPUT /usr/local/texlive/2021/texmf-dist/tex/platex/jsclasses/jsarticle.cls
 INPUT /usr/local/texlive/2021/texmf-dist/tex/platex/jsclasses/jsarticle.cls

@@ -36,9 +36,9 @@ f_sn = linspace(0, 4000, length(Y_sn));
 f_fsn = linspace(0, 4000, length(Y_fsn)); //周波数軸の作成
 
 subplot(2,1,2);
-xlabel('f');
+xlabel('f[Hz]');
 ylabel('Y_nz,Y_sn,Y_fsn');
 plot(f_fsn,abs(Y_fsn),'-b'); //フィルター付きsin波形のフーリエ変換
 
-xs2png(0, 'kadai13.png')
+
 

@@ -1,11 +1,11 @@
 # Fdb version 3
-["dvipdf"] 1626313632 "out/report.dvi" "out/report.pdf" "out/report" 1626313634
-  "out/report.dvi" 1626313632 16008 3c94345c490ed2d1b9909414cb835023 "latex"
+["dvipdf"] 1627966278 "out/report.dvi" "out/report.pdf" "out/report" 1627966280
+  "out/report.dvi" 1627966278 25332 6615b58ca2cc3e532ff731f6da25780f "latex"
   (generated)
   "out/report.pdf"
-["latex"] 1626313623 "/Volumes/GoogleDrive/My Drive/schools/4/Experiment/Arduino/TeX/report.tex" "out/report.dvi" "report" 1626313634
+["latex"] 1627966276 "/Users/shimoishi/GoogleDrive/schools/4/Experiment/Arduino/TeX/report.tex" "out/report.dvi" "report" 1627966280
+  "/Users/shimoishi/GoogleDrive/schools/4/Experiment/Arduino/TeX/report.tex" 1627966271 11810 98cd06366f282a3f7818469d1cfaf7ae ""
   "/Users/shimoishi/Library/texmf/tex/latex/plistings.sty" 1585043208 12306 206228c3a0b473bd4a0a72179299b42a ""
-  "/Volumes/GoogleDrive/My Drive/schools/4/Experiment/Arduino/TeX/report.tex" 1626313605 7267 bc27010d6918d875f4653c1544d221de ""
   "/usr/local/texlive/2021/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2021/texmf-dist/fonts/tfm/ptex-fonts/jis/jis.tfm" 1463434352 468 53f854284f6afa6c36aaa2d1090ecc12 ""
   "/usr/local/texlive/2021/texmf-dist/fonts/tfm/ptex-fonts/jis/jisg.tfm" 1463434352 468 53f854284f6afa6c36aaa2d1090ecc12 ""
@@ -121,13 +121,15 @@
   "/usr/local/texlive/2021/texmf-var/web2c/eptex/platex.fmt" 1621324098 2717275 287691f5aefbb500ddfd4d009455316a ""
   "/usr/local/texlive/2021/texmf.cnf" 1616695596 577 4c1911a7228e554c6032256d3cf5567d ""
   "Circuit.jpg" 1626155875 17010 e04d59e775ba4d6869196eac14ab0181 ""
-  "out/report.aux" 1626313632 2859 d14cc96b02264c693be5f599ba35a7d4 "latex"
-  "out/report.out" 1626313632 550 e904256b25a11165433e899313f26200 "latex"
+  "out/report.aux" 1627966278 4378 9dc2e267d22f48917bb7edc2580ab67d "latex"
+  "out/report.out" 1627966278 734 dcd00bed4d598bf1e7b1f57a843c0e7d "latex"
   "picture/chata1.jpg" 1626308252 7035 5f6f579960477333c5adf5332ddeb81f ""
   "picture/chata2.png" 1626308273 6560 412fbaee0adfa707246357cbcf118ffb ""
-  "report.tex" 1626313605 7267 bc27010d6918d875f4653c1544d221de ""
+  "picture/down.png" 1627953681 7045 a90410eca1be745924aea0650429c454 ""
+  "picture/up.png" 1627953665 7201 eabd9502460438b90d06b97b75bf5718 ""
+  "report.tex" 1627966271 11810 98cd06366f282a3f7818469d1cfaf7ae ""
   (generated)
-  "out/report.dvi"
-  "out/report.log"
   "out/report.aux"
+  "out/report.log"
+  "out/report.dvi"
   "out/report.out"

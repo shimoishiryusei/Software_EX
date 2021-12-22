@@ -92,7 +92,7 @@
   \label{P:circuit}
 \end{figure}
 Arduino Unoのピン10, GND, 5Vにはサーボモータを接続した．また，ピン13にはLEDとそれに伴う抵抗($30\si{\ohm}$)を接続した．
-フォトトランジスタとタクトスイッチにはプルアップ抵抗を接続し，出力状態，センサの状態を反転させている．よって，タクトスイッチを
+フォトトランジスタとタクトスイッチにはプルダウン抵抗を接続し，出力状態，センサの状態を反転させている．よって，タクトスイッチを
 押したときのみ，ArduinoでONを読み取ることができる．
 \subsection{ソフトウェア}
 以下のCode\ref{Code}に作成したArduinoのソースコードを示す．
@@ -141,6 +141,62 @@ LEDの出力ポートとして割り当てている．25\ $\sim$ 30行目ではL
 から読み取った明るさの数値からサーボモータを動かす動作を記している．割り込み動作と，メインのLOOP文を用いることで，バラバラの周期で，自分が指定したタイミング，周期
 でプログラムを動作させている．
 
+\section{考察}
+\subsection{ハードウェア}
+最初に回路を作成したとき，タクトスイッチを押してない間に連続してフォトトランジスタで読み取った値が出力され，
+スイッチを押したときにのみ値の出力が停止する動作をした．その原因が，プルダウン抵抗を回路に組み込んでいなかったことであった．
+プルダウン抵抗を挟むことにより，マイコンは常にGNDに接続され，スイッチを押したときのみ入力が加わる回路ができる．以下の図\ref{pull}に
+プルアップ抵抗の回路図とプルダウン抵抗の回路図を示す．
+\begin{figure}[H]
+  \begin{minipage}{0.48\textwidth}
+    \begin{center}
+      \includegraphics[clip,width=6cm]{picture/up.png}
+    \end{center}
+    \subcaption{プルアップ抵抗の回路図}
+    \label{P:pullup}
+  \end{minipage}
+  \begin{minipage}{0.48\textwidth}
+    \begin{center}
+      \includegraphics[clip,width=6cm]{picture/down.png}
+    \end{center}
+    \subcaption{プルダウン抵抗の回路図}
+    \label{P:pulldown}
+  \end{minipage}
+  \caption{プルアップ抵抗とプルダウン抵抗の回路}
+  \label{pull}
+\end{figure}
+プルアップ抵抗もプルダウン抵抗も，マイコンが常に抵抗に接続されるようになり，「浮く」状態を防ぐ事ができる．したがって，回路の動作を
+安定させることができる．
+\subsection{ソフトウェア}
+今回の実験で作成したプログラムにはタイマ割り込みと外部割り込みを用いている．これらの使い方と動作に与える影響を考察する．
+\begin{lstlisting}[caption=割り込みの使い方, label=C:ex]
+  attachInterrupt(interrupt,function,mode);
+  MsTimer2::set(sec,function);
+\end{lstlisting}
+Code\ref{C:ex}の1行目には外部割り込み，2行目にタイマ割り込みの構文を示した．attachInterruptでは，割り込み番号，割り込んだ際にする動作関数，割り込みを発生させるトリガを
+指定する．Code\ref{Code}では，割り込み番号0で，interruptという名前の自作関数を動かしている．このとき，割り込みを発生させるトリガとしてFALLINGを指定しているが，トリガには他にも複数の
+種類が存在する．以下の表\ref{T:TRIG}にトリガの種類を示す．~\cite{interrupt_fun}
+\begin{table}[H]
+  \begin{center}
+    \caption{トリガの種類}
+    \begin{tabular}{|c|l|} \hline
+      トリガの名前 & 概要                                        \\ \hline
+      LOW          & ピンがLOWのとき発生                         \\ \hline
+      CHANGE       & ピンの状態が変化したときに発生              \\ \hline
+      RISING       & ピンの状態がLOWからHIGHに変わったときに発生 \\ \hline
+      FALLING      & ピンの状態がHIGHからLOWに変わったときに発生 \\ \hline
+    \end{tabular}
+    \label{T:TRIG}
+  \end{center}
+\end{table} \par
+2行目のタイマ割り込み~\cite{interrupt2}では，周期(ms)と動作させる関数を指定している．Code\ref{Code}では100ms周期でbringという自作関数を呼び出しており，100ミリ秒ごとにLEDを点灯させる
+関数を動作させている．\par
+どちらの関数も割り込みを行うことでメインの処理を一時中断して割り込み動作を行っている．Code\ref{Code}で割り込んでいる関数の動作は単純な動作であり，メインに影響を及ぼすことは少ない．
+しかし，プログラムに更に多くの機能を追加していき，割り込みの中に更に割り込みを入れたり，割り込み関数の中に処理量が大きなものを入れたりすることで，プログラマが予期しない動作をしすることがある．
+これらを防ぐためには，処理時間を考慮した余裕のある割り込みを行ったり，割り込みで行う処理を軽くするなどの対応をしてソフトウェアの安定化を図る必要がある．
+
+
+
 \section{チャタリングとは}
 トグルスイッチや押しボタンスイッチなどの機械式スイッチでは，チャタリング~\cite{chataring}という現象が生じる．チャタリングが生じた際の波形の様子を以下の図\ref{P:chata}に示す．
 
@@ -168,8 +224,10 @@ LEDの出力ポートとして割り当てている．25\ $\sim$ 30行目ではL
 
 
 \begin{thebibliography}{99}
-  \bibitem{text} 熊本高等専門学校 制御情報システム工学科授業資料: ``マイコン基礎・応用'' (最終閲覧日 2021年7月6日)\\
-  \bibitem{interrupt1} Tech Village: ``ハードウェアの仕組みとソフトウェア処理 ―― マイコンの動作を理解する'' (最終閲覧日 2021年7月6日)\\ \url{http://www.kumikomi.net/archives/2009/11/post_23.php?page=5}\\
-  \bibitem{chataring} marutsu: ``スイッチのチャタリングの概要'' (最終閲覧日 2021年7月13日) \\ \url{https://www.marutsu.co.jp/pc/static/large_order/1405_311_ph}
+  \bibitem{text} 熊本高等専門学校 制御情報システム工学科授業資料, ``マイコン基礎・応用'' (最終閲覧日 2021年7月6日)\\
+  \bibitem{interrupt1} Tech Village, ``ハードウェアの仕組みとソフトウェア処理 ―― マイコンの動作を理解する'' (最終閲覧日 2021年7月6日)\\ \url{http://www.kumikomi.net/archives/2009/11/post_23.php?page=5}\\
+  \bibitem{interrupt2} Arduino日本語リファレンス, ``MsTimer2(ミリ秒単位で指定するタイマ)'' (最終閲覧日 2021年8月3日) \\ \url{http://www.musashinodenpa.com/arduino/ref/index.php?f=1&pos=2027} \\
+  \bibitem{chataring} marutsu, ``スイッチのチャタリングの概要'' (最終閲覧日 2021年7月13日) \\ \url{https://www.marutsu.co.jp/pc/static/large_order/1405_311_ph} \\
+  \bibitem{interrupt_fun} Arduino日本語リファレンス, ``attachInterrupt(interrupt, function, mode)'' (最終閲覧日 2021年8月3日) \\ \url{http://www.musashinodenpa.com/arduino/ref/index.php?f=0&pos=3069}
 \end{thebibliography}
 \end{document}

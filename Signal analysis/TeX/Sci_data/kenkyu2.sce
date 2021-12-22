@@ -20,9 +20,8 @@ end
 
 scf(1);
 plot2d(n,DS);
-
-xs2png(0, 'noiz.png');
-xs2png(1, 'kenkyu2.png')
+xlabel("t[s]");
+ylabel("y");
 
 
 
